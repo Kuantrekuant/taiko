@@ -36,7 +36,7 @@ public class InitialDataCheckController : BaseController<InitialDataCheckControl
                 VerupNo = 1
             });
         }
-        
+
         var introData = new List<InitialdatacheckResponse.InformationData>();
         for (var setId = 1; setId <= gameDataService.GetSongIntroDictionary().Count; setId++)
         {
@@ -107,7 +107,7 @@ public class InitialDataCheckController : BaseController<InitialDataCheckControl
                 }
             }*/
         };
-            
+
         response.AryDanOdaiDatas.AddRange(danData);
         response.ArySongIntroductionDatas.AddRange(introData);
         response.AryEventfolderDatas.AddRange(eventFolderData);
