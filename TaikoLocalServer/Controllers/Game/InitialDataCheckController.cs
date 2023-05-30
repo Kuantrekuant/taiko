@@ -74,6 +74,14 @@ public class InitialDataCheckController : BaseController<InitialDataCheckControl
                     VerupNo = 2
                 }
             },
+            AryMovieInfoes =
+            {
+                new InitialdatacheckResponse.MovieData
+                {
+                    MovieId = 2,
+                    EnableDays = 9999
+                }
+            }
             /*AryTelopDatas =
             {
                 new InitialdatacheckResponse.InformationData
@@ -98,14 +106,7 @@ public class InitialDataCheckController : BaseController<InitialDataCheckControl
                     TokenId = 1
                 }
             },
-            AryMovieInfos = 
-            {
-                new InitialdatacheckResponse.MovieData
-                {
-                    MovieId = 2,
-                    EnableDays = 9999
-                }
-            }*/
+            */
         };
             
         response.AryDanOdaiDatas.AddRange(danData);
